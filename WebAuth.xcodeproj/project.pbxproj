@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E4D189421BB96387003A5EB7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D189411BB96387003A5EB7 /* main.m */; };
+		E4D189451BB96387003A5EB7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D189441BB96387003A5EB7 /* AppDelegate.m */; };
+		E4D189481BB96387003A5EB7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D189471BB96387003A5EB7 /* ViewController.m */; };
+		E4D1894B1BB96387003A5EB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D189491BB96387003A5EB7 /* Main.storyboard */; };
+		E4D1894D1BB96387003A5EB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D1894C1BB96387003A5EB7 /* Assets.xcassets */; };
+		E4D189501BB96387003A5EB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D1894E1BB96387003A5EB7 /* LaunchScreen.storyboard */; };
+		E4D1895B1BB96387003A5EB7 /* WebAuthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1895A1BB96387003A5EB7 /* WebAuthTests.m */; };
+		E4D189661BB96387003A5EB7 /* WebAuthUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D189651BB96387003A5EB7 /* WebAuthUITests.m */; };
+		E4D189891BB974B5003A5EB7 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D189771BB974B5003A5EB7 /* AFHTTPRequestOperation.m */; settings = {ASSET_TAGS = (); }; };
+		E4D1898A1BB974B5003A5EB7 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D189791BB974B5003A5EB7 /* AFHTTPRequestOperationManager.m */; settings = {ASSET_TAGS = (); }; };
+		E4D1898B1BB974B5003A5EB7 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1897B1BB974B5003A5EB7 /* AFHTTPSessionManager.m */; settings = {ASSET_TAGS = (); }; };
+		E4D1898C1BB974B5003A5EB7 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1897E1BB974B5003A5EB7 /* AFNetworkReachabilityManager.m */; settings = {ASSET_TAGS = (); }; };
+		E4D1898D1BB974B5003A5EB7 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D189801BB974B5003A5EB7 /* AFSecurityPolicy.m */; settings = {ASSET_TAGS = (); }; };
+		E4D1898E1BB974B5003A5EB7 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D189821BB974B5003A5EB7 /* AFURLConnectionOperation.m */; settings = {ASSET_TAGS = (); }; };
+		E4D1898F1BB974B5003A5EB7 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D189841BB974B5003A5EB7 /* AFURLRequestSerialization.m */; settings = {ASSET_TAGS = (); }; };
+		E4D189901BB974B5003A5EB7 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D189861BB974B5003A5EB7 /* AFURLResponseSerialization.m */; settings = {ASSET_TAGS = (); }; };
+		E4D189911BB974B5003A5EB7 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D189881BB974B5003A5EB7 /* AFURLSessionManager.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4D189571BB96387003A5EB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4D189351BB96386003A5EB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4D1893C1BB96386003A5EB7;
+			remoteInfo = WebAuth;
+		};
+		E4D189621BB96387003A5EB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4D189351BB96386003A5EB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4D1893C1BB96386003A5EB7;
+			remoteInfo = WebAuth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E4D1893D1BB96387003A5EB7 /* WebAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4D189411BB96387003A5EB7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E4D189431BB96387003A5EB7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E4D189441BB96387003A5EB7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E4D189461BB96387003A5EB7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E4D189471BB96387003A5EB7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E4D1894A1BB96387003A5EB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E4D1894C1BB96387003A5EB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E4D1894F1BB96387003A5EB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E4D189511BB96387003A5EB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4D189561BB96387003A5EB7 /* WebAuthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebAuthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4D1895A1BB96387003A5EB7 /* WebAuthTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebAuthTests.m; sourceTree = "<group>"; };
+		E4D1895C1BB96387003A5EB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4D189611BB96387003A5EB7 /* WebAuthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebAuthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4D189651BB96387003A5EB7 /* WebAuthUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebAuthUITests.m; sourceTree = "<group>"; };
+		E4D189671BB96387003A5EB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4D189761BB974B5003A5EB7 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		E4D189771BB974B5003A5EB7 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		E4D189781BB974B5003A5EB7 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		E4D189791BB974B5003A5EB7 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		E4D1897A1BB974B5003A5EB7 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		E4D1897B1BB974B5003A5EB7 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		E4D1897C1BB974B5003A5EB7 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		E4D1897D1BB974B5003A5EB7 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		E4D1897E1BB974B5003A5EB7 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		E4D1897F1BB974B5003A5EB7 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		E4D189801BB974B5003A5EB7 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		E4D189811BB974B5003A5EB7 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		E4D189821BB974B5003A5EB7 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		E4D189831BB974B5003A5EB7 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		E4D189841BB974B5003A5EB7 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		E4D189851BB974B5003A5EB7 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		E4D189861BB974B5003A5EB7 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		E4D189871BB974B5003A5EB7 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		E4D189881BB974B5003A5EB7 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4D1893A1BB96386003A5EB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4D189531BB96387003A5EB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4D1895E1BB96387003A5EB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E4D189341BB96386003A5EB7 = {
+			isa = PBXGroup;
+			children = (
+				E4D1893F1BB96387003A5EB7 /* WebAuth */,
+				E4D189591BB96387003A5EB7 /* WebAuthTests */,
+				E4D189641BB96387003A5EB7 /* WebAuthUITests */,
+				E4D1893E1BB96387003A5EB7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E4D1893E1BB96387003A5EB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4D1893D1BB96387003A5EB7 /* WebAuth.app */,
+				E4D189561BB96387003A5EB7 /* WebAuthTests.xctest */,
+				E4D189611BB96387003A5EB7 /* WebAuthUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4D1893F1BB96387003A5EB7 /* WebAuth */ = {
+			isa = PBXGroup;
+			children = (
+				E4D189751BB974B5003A5EB7 /* AFNetworking */,
+				E4D189431BB96387003A5EB7 /* AppDelegate.h */,
+				E4D189441BB96387003A5EB7 /* AppDelegate.m */,
+				E4D189461BB96387003A5EB7 /* ViewController.h */,
+				E4D189471BB96387003A5EB7 /* ViewController.m */,
+				E4D189491BB96387003A5EB7 /* Main.storyboard */,
+				E4D1894C1BB96387003A5EB7 /* Assets.xcassets */,
+				E4D1894E1BB96387003A5EB7 /* LaunchScreen.storyboard */,
+				E4D189511BB96387003A5EB7 /* Info.plist */,
+				E4D189401BB96387003A5EB7 /* Supporting Files */,
+			);
+			path = WebAuth;
+			sourceTree = "<group>";
+		};
+		E4D189401BB96387003A5EB7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4D189411BB96387003A5EB7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4D189591BB96387003A5EB7 /* WebAuthTests */ = {
+			isa = PBXGroup;
+			children = (
+				E4D1895A1BB96387003A5EB7 /* WebAuthTests.m */,
+				E4D1895C1BB96387003A5EB7 /* Info.plist */,
+			);
+			path = WebAuthTests;
+			sourceTree = "<group>";
+		};
+		E4D189641BB96387003A5EB7 /* WebAuthUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E4D189651BB96387003A5EB7 /* WebAuthUITests.m */,
+				E4D189671BB96387003A5EB7 /* Info.plist */,
+			);
+			path = WebAuthUITests;
+			sourceTree = "<group>";
+		};
+		E4D189751BB974B5003A5EB7 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				E4D189761BB974B5003A5EB7 /* AFHTTPRequestOperation.h */,
+				E4D189771BB974B5003A5EB7 /* AFHTTPRequestOperation.m */,
+				E4D189781BB974B5003A5EB7 /* AFHTTPRequestOperationManager.h */,
+				E4D189791BB974B5003A5EB7 /* AFHTTPRequestOperationManager.m */,
+				E4D1897A1BB974B5003A5EB7 /* AFHTTPSessionManager.h */,
+				E4D1897B1BB974B5003A5EB7 /* AFHTTPSessionManager.m */,
+				E4D1897C1BB974B5003A5EB7 /* AFNetworking.h */,
+				E4D1897D1BB974B5003A5EB7 /* AFNetworkReachabilityManager.h */,
+				E4D1897E1BB974B5003A5EB7 /* AFNetworkReachabilityManager.m */,
+				E4D1897F1BB974B5003A5EB7 /* AFSecurityPolicy.h */,
+				E4D189801BB974B5003A5EB7 /* AFSecurityPolicy.m */,
+				E4D189811BB974B5003A5EB7 /* AFURLConnectionOperation.h */,
+				E4D189821BB974B5003A5EB7 /* AFURLConnectionOperation.m */,
+				E4D189831BB974B5003A5EB7 /* AFURLRequestSerialization.h */,
+				E4D189841BB974B5003A5EB7 /* AFURLRequestSerialization.m */,
+				E4D189851BB974B5003A5EB7 /* AFURLResponseSerialization.h */,
+				E4D189861BB974B5003A5EB7 /* AFURLResponseSerialization.m */,
+				E4D189871BB974B5003A5EB7 /* AFURLSessionManager.h */,
+				E4D189881BB974B5003A5EB7 /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4D1893C1BB96386003A5EB7 /* WebAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4D1896A1BB96387003A5EB7 /* Build configuration list for PBXNativeTarget "WebAuth" */;
+			buildPhases = (
+				E4D189391BB96386003A5EB7 /* Sources */,
+				E4D1893A1BB96386003A5EB7 /* Frameworks */,
+				E4D1893B1BB96386003A5EB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebAuth;
+			productName = WebAuth;
+			productReference = E4D1893D1BB96387003A5EB7 /* WebAuth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E4D189551BB96387003A5EB7 /* WebAuthTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4D1896D1BB96387003A5EB7 /* Build configuration list for PBXNativeTarget "WebAuthTests" */;
+			buildPhases = (
+				E4D189521BB96387003A5EB7 /* Sources */,
+				E4D189531BB96387003A5EB7 /* Frameworks */,
+				E4D189541BB96387003A5EB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4D189581BB96387003A5EB7 /* PBXTargetDependency */,
+			);
+			name = WebAuthTests;
+			productName = WebAuthTests;
+			productReference = E4D189561BB96387003A5EB7 /* WebAuthTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E4D189601BB96387003A5EB7 /* WebAuthUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4D189701BB96387003A5EB7 /* Build configuration list for PBXNativeTarget "WebAuthUITests" */;
+			buildPhases = (
+				E4D1895D1BB96387003A5EB7 /* Sources */,
+				E4D1895E1BB96387003A5EB7 /* Frameworks */,
+				E4D1895F1BB96387003A5EB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4D189631BB96387003A5EB7 /* PBXTargetDependency */,
+			);
+			name = WebAuthUITests;
+			productName = WebAuthUITests;
+			productReference = E4D189611BB96387003A5EB7 /* WebAuthUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4D189351BB96386003A5EB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "李大爷";
+				TargetAttributes = {
+					E4D1893C1BB96386003A5EB7 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 5EE3Z46PC9;
+					};
+					E4D189551BB96387003A5EB7 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 5EE3Z46PC9;
+						TestTargetID = E4D1893C1BB96386003A5EB7;
+					};
+					E4D189601BB96387003A5EB7 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 5EE3Z46PC9;
+						TestTargetID = E4D1893C1BB96386003A5EB7;
+					};
+				};
+			};
+			buildConfigurationList = E4D189381BB96386003A5EB7 /* Build configuration list for PBXProject "WebAuth" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E4D189341BB96386003A5EB7;
+			productRefGroup = E4D1893E1BB96387003A5EB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4D1893C1BB96386003A5EB7 /* WebAuth */,
+				E4D189551BB96387003A5EB7 /* WebAuthTests */,
+				E4D189601BB96387003A5EB7 /* WebAuthUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E4D1893B1BB96386003A5EB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D189501BB96387003A5EB7 /* LaunchScreen.storyboard in Resources */,
+				E4D1894D1BB96387003A5EB7 /* Assets.xcassets in Resources */,
+				E4D1894B1BB96387003A5EB7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4D189541BB96387003A5EB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4D1895F1BB96387003A5EB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4D189391BB96386003A5EB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D189891BB974B5003A5EB7 /* AFHTTPRequestOperation.m in Sources */,
+				E4D189481BB96387003A5EB7 /* ViewController.m in Sources */,
+				E4D1898A1BB974B5003A5EB7 /* AFHTTPRequestOperationManager.m in Sources */,
+				E4D1898C1BB974B5003A5EB7 /* AFNetworkReachabilityManager.m in Sources */,
+				E4D189901BB974B5003A5EB7 /* AFURLResponseSerialization.m in Sources */,
+				E4D1898E1BB974B5003A5EB7 /* AFURLConnectionOperation.m in Sources */,
+				E4D1898D1BB974B5003A5EB7 /* AFSecurityPolicy.m in Sources */,
+				E4D1898B1BB974B5003A5EB7 /* AFHTTPSessionManager.m in Sources */,
+				E4D1898F1BB974B5003A5EB7 /* AFURLRequestSerialization.m in Sources */,
+				E4D189911BB974B5003A5EB7 /* AFURLSessionManager.m in Sources */,
+				E4D189451BB96387003A5EB7 /* AppDelegate.m in Sources */,
+				E4D189421BB96387003A5EB7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4D189521BB96387003A5EB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D1895B1BB96387003A5EB7 /* WebAuthTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4D1895D1BB96387003A5EB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D189661BB96387003A5EB7 /* WebAuthUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4D189581BB96387003A5EB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4D1893C1BB96386003A5EB7 /* WebAuth */;
+			targetProxy = E4D189571BB96387003A5EB7 /* PBXContainerItemProxy */;
+		};
+		E4D189631BB96387003A5EB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4D1893C1BB96386003A5EB7 /* WebAuth */;
+			targetProxy = E4D189621BB96387003A5EB7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E4D189491BB96387003A5EB7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4D1894A1BB96387003A5EB7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E4D1894E1BB96387003A5EB7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4D1894F1BB96387003A5EB7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E4D189681BB96387003A5EB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E4D189691BB96387003A5EB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E4D1896B1BB96387003A5EB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WebAuth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ut.WebAuth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E4D1896C1BB96387003A5EB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WebAuth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ut.WebAuth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E4D1896E1BB96387003A5EB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WebAuthTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ut.WebAuthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebAuth.app/WebAuth";
+			};
+			name = Debug;
+		};
+		E4D1896F1BB96387003A5EB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WebAuthTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ut.WebAuthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebAuth.app/WebAuth";
+			};
+			name = Release;
+		};
+		E4D189711BB96387003A5EB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WebAuthUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ut.WebAuthUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WebAuth;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		E4D189721BB96387003A5EB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WebAuthUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ut.WebAuthUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WebAuth;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4D189381BB96386003A5EB7 /* Build configuration list for PBXProject "WebAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4D189681BB96387003A5EB7 /* Debug */,
+				E4D189691BB96387003A5EB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4D1896A1BB96387003A5EB7 /* Build configuration list for PBXNativeTarget "WebAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4D1896B1BB96387003A5EB7 /* Debug */,
+				E4D1896C1BB96387003A5EB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4D1896D1BB96387003A5EB7 /* Build configuration list for PBXNativeTarget "WebAuthTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4D1896E1BB96387003A5EB7 /* Debug */,
+				E4D1896F1BB96387003A5EB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4D189701BB96387003A5EB7 /* Build configuration list for PBXNativeTarget "WebAuthUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4D189711BB96387003A5EB7 /* Debug */,
+				E4D189721BB96387003A5EB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4D189351BB96386003A5EB7 /* Project object */;
+}
