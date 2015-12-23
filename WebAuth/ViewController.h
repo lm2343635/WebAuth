@@ -21,5 +21,9 @@
 
 - (IBAction)logout:(id)sender;
 
+- (void)login;
+
+- (void)logout;
+
 @end
 

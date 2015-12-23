@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-
+    [self createItem];
     return YES;
 }
 
@@ -42,6 +42,73 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler {
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
+    if([shortcutItem.type isEqualToString:@"login"]) {
+        NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
+        NSString *username=[defaults objectForKey:@"username"];
+        NSString *password=[defaults objectForKey:@"password"];
+        [manager POST:@"https://webauth03.cc.tsukuba.ac.jp:8443/cgi-bin/adeflogin.cgi"
+           parameters:@{
+                        @"name":username,
+                        @"pass":password
+                        }
+              success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                  NSString *message;
+                  if(operation.responseString==nil) {
+                      message=@"Login Success";
+                  } else  {
+                      message=@"Login Failed, check your username and password! Make sure you have saved your config.";
+                  }
+                  [self showMessage:message];
+                  
+              }
+              failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                  if(DEBUG) {
+                      NSLog(@"Error: %@", error);
+                  }
+              }];
+    } else if ([shortcutItem.type isEqualToString:@"logout"]) {
+        [manager POST:@"https://webauth03.cc.tsukuba.ac.jp:8443/cgi-bin/adeflogout.cgi"
+           parameters:nil
+              success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                  [self showMessage:@"Logout"];
+              }
+              failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                  if(DEBUG) {
+                      NSLog(@"Error: %@", error);
+                  }
+              }];
+    }
+}
+
+-(void) createItem {
+    UIMutableApplicationShortcutItem *item1 = [[UIMutableApplicationShortcutItem alloc] initWithType:@"login"
+                                                                                      localizedTitle:@"Login"
+                                                                                   localizedSubtitle:@"Click to login"
+                                                                                                icon:[UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeConfirmation]
+                                                                                            userInfo:nil];
+    UIMutableApplicationShortcutItem *item2 = [[UIMutableApplicationShortcutItem alloc] initWithType:@"logout"
+                                                                                      localizedTitle:@"Logout"
+                                                                                   localizedSubtitle:@"Click to logout"
+                                                                                                icon:[UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeProhibit]
+                                                                                            userInfo:nil];
+    NSArray *addArr = @[item2, item1];
+    [UIApplication sharedApplication].shortcutItems = addArr;
+}
+
+- (void)showMessage: (NSString *)message {
+    UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Tip"
+                                                  message:message
+                                                 delegate:nil
+                                        cancelButtonTitle:@"OK"
+                                        otherButtonTitles: nil];
+    [alert show];
+    
 }
 
 @end

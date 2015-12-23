@@ -55,6 +55,27 @@
     if(DEBUG)
         NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
     self.loginButton.enabled=NO;
+    [self login];
+}
+
+- (IBAction)logout:(id)sender {
+    if(DEBUG)
+        NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
+    self.logoutButton.enabled=NO;
+    [self logout];
+}
+
+- (void)showMessage: (NSString *)message {
+    UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Tip"
+                                                  message:message
+                                                 delegate:nil
+                                        cancelButtonTitle:@"OK"
+                                        otherButtonTitles: nil];
+    [alert show];
+
+}
+
+- (void)login {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
@@ -75,7 +96,7 @@
                   message=@"Login Failed, check your username and password! Make sure you have saved your config.";
               }
               [self showMessage:message];
-
+              
           }
           failure:^(AFHTTPRequestOperation *operation, NSError *error) {
               self.loginButton.enabled=YES;
@@ -85,10 +106,7 @@
           }];
 }
 
-- (IBAction)logout:(id)sender {
-    if(DEBUG)
-        NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
-    self.logoutButton.enabled=NO;
+- (void)logout {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
@@ -104,18 +122,5 @@
                   NSLog(@"Error: %@", error);
               }
           }];
-
 }
-
-- (void)showMessage: (NSString *)message {
-    UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Tip"
-                                                  message:message
-                                                 delegate:nil
-                                        cancelButtonTitle:@"OK"
-                                        otherButtonTitles: nil];
-    [alert show];
-
-}
-
-
 @end
