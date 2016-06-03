@@ -15,15 +15,15 @@
 		E4D189501BB96387003A5EB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D1894E1BB96387003A5EB7 /* LaunchScreen.storyboard */; };
 		E4D1895B1BB96387003A5EB7 /* WebAuthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1895A1BB96387003A5EB7 /* WebAuthTests.m */; };
 		E4D189661BB96387003A5EB7 /* WebAuthUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D189651BB96387003A5EB7 /* WebAuthUITests.m */; };
-		E4D189891BB974B5003A5EB7 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D189771BB974B5003A5EB7 /* AFHTTPRequestOperation.m */; settings = {ASSET_TAGS = (); }; };
-		E4D1898A1BB974B5003A5EB7 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D189791BB974B5003A5EB7 /* AFHTTPRequestOperationManager.m */; settings = {ASSET_TAGS = (); }; };
-		E4D1898B1BB974B5003A5EB7 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1897B1BB974B5003A5EB7 /* AFHTTPSessionManager.m */; settings = {ASSET_TAGS = (); }; };
-		E4D1898C1BB974B5003A5EB7 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1897E1BB974B5003A5EB7 /* AFNetworkReachabilityManager.m */; settings = {ASSET_TAGS = (); }; };
-		E4D1898D1BB974B5003A5EB7 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D189801BB974B5003A5EB7 /* AFSecurityPolicy.m */; settings = {ASSET_TAGS = (); }; };
-		E4D1898E1BB974B5003A5EB7 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D189821BB974B5003A5EB7 /* AFURLConnectionOperation.m */; settings = {ASSET_TAGS = (); }; };
-		E4D1898F1BB974B5003A5EB7 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D189841BB974B5003A5EB7 /* AFURLRequestSerialization.m */; settings = {ASSET_TAGS = (); }; };
-		E4D189901BB974B5003A5EB7 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D189861BB974B5003A5EB7 /* AFURLResponseSerialization.m */; settings = {ASSET_TAGS = (); }; };
-		E4D189911BB974B5003A5EB7 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D189881BB974B5003A5EB7 /* AFURLSessionManager.m */; settings = {ASSET_TAGS = (); }; };
+		E4D189891BB974B5003A5EB7 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D189771BB974B5003A5EB7 /* AFHTTPRequestOperation.m */; };
+		E4D1898A1BB974B5003A5EB7 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D189791BB974B5003A5EB7 /* AFHTTPRequestOperationManager.m */; };
+		E4D1898B1BB974B5003A5EB7 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1897B1BB974B5003A5EB7 /* AFHTTPSessionManager.m */; };
+		E4D1898C1BB974B5003A5EB7 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1897E1BB974B5003A5EB7 /* AFNetworkReachabilityManager.m */; };
+		E4D1898D1BB974B5003A5EB7 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D189801BB974B5003A5EB7 /* AFSecurityPolicy.m */; };
+		E4D1898E1BB974B5003A5EB7 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D189821BB974B5003A5EB7 /* AFURLConnectionOperation.m */; };
+		E4D1898F1BB974B5003A5EB7 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D189841BB974B5003A5EB7 /* AFURLRequestSerialization.m */; };
+		E4D189901BB974B5003A5EB7 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D189861BB974B5003A5EB7 /* AFURLResponseSerialization.m */; };
+		E4D189911BB974B5003A5EB7 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D189881BB974B5003A5EB7 /* AFURLSessionManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -480,11 +480,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WebAuth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = edu.ut.WebAuth;
+				PRODUCT_BUNDLE_IDENTIFIER = pw.fczm.WebAuth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -492,11 +495,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WebAuth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = edu.ut.WebAuth;
+				PRODUCT_BUNDLE_IDENTIFIER = pw.fczm.WebAuth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

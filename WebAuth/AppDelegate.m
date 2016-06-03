@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "AFNetworking/AFHTTPRequestOperationManager.h"
 
+#define DEBUG 0
+
 @interface AppDelegate ()
 
 @end
@@ -52,7 +54,7 @@
         NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
         NSString *username=[defaults objectForKey:@"username"];
         NSString *password=[defaults objectForKey:@"password"];
-        [manager POST:@"https://webauth03.cc.tsukuba.ac.jp:8443/cgi-bin/adeflogin.cgi"
+        [manager POST:@"https://webauth01.cc.tsukuba.ac.jp:8443/cgi-bin/adeflogin.cgi"
            parameters:@{
                         @"name":username,
                         @"pass":password
@@ -73,7 +75,7 @@
                   }
               }];
     } else if ([shortcutItem.type isEqualToString:@"logout"]) {
-        [manager POST:@"https://webauth03.cc.tsukuba.ac.jp:8443/cgi-bin/adeflogout.cgi"
+        [manager POST:@"https://webauth01.cc.tsukuba.ac.jp:8443/cgi-bin/adeflogout.cgi"
            parameters:nil
               success:^(AFHTTPRequestOperation *operation, id responseObject) {
                   [self showMessage:@"Logout"];

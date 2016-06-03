@@ -82,7 +82,7 @@
     NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
     NSString *username=[defaults objectForKey:@"username"];
     NSString *password=[defaults objectForKey:@"password"];
-    [manager POST:@"https://webauth03.cc.tsukuba.ac.jp:8443/cgi-bin/adeflogin.cgi"
+    [manager POST:@"https://webauth01.cc.tsukuba.ac.jp:8443/cgi-bin/adeflogin.cgi"
        parameters:@{
                     @"name":username,
                     @"pass":password
@@ -110,7 +110,7 @@
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
-    [manager POST:@"https://webauth03.cc.tsukuba.ac.jp:8443/cgi-bin/adeflogout.cgi"
+    [manager POST:@"https://webauth01.cc.tsukuba.ac.jp:8443/cgi-bin/adeflogout.cgi"
        parameters:nil
           success:^(AFHTTPRequestOperation *operation, id responseObject) {
               self.logoutButton.enabled=YES;
