@@ -106,6 +106,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "WebAuth"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
