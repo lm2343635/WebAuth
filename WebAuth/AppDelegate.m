@@ -9,8 +9,6 @@
 #import "AppDelegate.h"
 #import "AFNetworking/AFHTTPRequestOperationManager.h"
 
-#define DEBUG 0
-
 @interface AppDelegate ()
 
 @end
@@ -20,7 +18,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [self createItem];
+    //Support 3D Touch
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0) {
+        [self createItem];
+    }
+    
+    
+    
     return YES;
 }
 

@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,32 +15,36 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="tsukuba" translatesAutoresizingMaskIntoConstraints="NO" id="ucZ-xo-97A">
-                                <rect key="frame" x="238" y="90" width="125" height="125"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tsukuba" translatesAutoresizingMaskIntoConstraints="NO" id="ucZ-xo-97A">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="9tP-j7-eYz"/>
+                                    <constraint firstAttribute="height" constant="125" id="r19-hX-KUm"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Auto Web Auth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3k0-zu-B01">
-                                <rect key="frame" x="219" y="223" width="164" height="21"/>
+                                <frame key="frameInset" minX="78" minY="231" width="164" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="University of Tsukuba" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0S-M9-efw">
-                                <rect key="frame" x="217" y="252" width="166" height="21"/>
+                                <frame key="frameInset" minX="78" minY="260" width="166" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="S0S-M9-efw" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="1lD-Uk-Hce"/>
-                            <constraint firstItem="S0S-M9-efw" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="80" id="CbA-lb-yl5"/>
-                            <constraint firstItem="ucZ-xo-97A" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Gqu-tn-zce"/>
-                            <constraint firstItem="3k0-zu-B01" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="60" id="IX2-kK-MXj"/>
-                            <constraint firstItem="3k0-zu-B01" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="qVe-G8-4Qa"/>
+                            <constraint firstItem="3k0-zu-B01" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="0Yf-7R-JQ6"/>
+                            <constraint firstItem="ucZ-xo-97A" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="77E-h0-YoC"/>
+                            <constraint firstItem="ucZ-xo-97A" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="71" id="FFt-N2-ryW"/>
+                            <constraint firstItem="S0S-M9-efw" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="JMI-G3-W2E"/>
+                            <constraint firstItem="3k0-zu-B01" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="211" id="RZr-2r-XR4"/>
+                            <constraint firstItem="S0S-M9-efw" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="240" id="fwr-47-7Sv"/>
                         </constraints>
                     </view>
                 </viewController>
