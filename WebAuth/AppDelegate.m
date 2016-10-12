@@ -47,15 +47,15 @@
         [AuthTool loginWithUsername:username
                            password:password
                            finished:^(BOOL success) {
-                               NSString *message = success? @"Login Success!": @"Login Failed, check your username and password and make sure you have connected to network in Tsukuba Univ.";
-                               [AlertTool showAlertWithTitle:@"Tip"
+                               NSString *message = success? NSLocalizedString(@"login_success", nil): NSLocalizedString(@"login_failed", nil);
+                               [AlertTool showAlertWithTitle:NSLocalizedString(@"tip_name", nil)
                                                   andContent:message
                                             inViewController:self.window.rootViewController];
                            }];
     } else if ([shortcutItem.type isEqualToString:@"logout"]) {
         [AuthTool logout:^(BOOL success) {
-            NSString *message = success? @"Logout Success!": @"Logout Failed, make sure you have connected to network in Tsukuba Univ.";
-            [AlertTool showAlertWithTitle:@"Tip"
+            NSString *message = success? NSLocalizedString(@"logout_success", nil): NSLocalizedString(@"logout_failed", nil);
+            [AlertTool showAlertWithTitle:NSLocalizedString(@"tip_name", nil)
                                andContent:message
                          inViewController:self.window.rootViewController];
         }];
@@ -67,13 +67,13 @@
         NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
     }
     UIMutableApplicationShortcutItem *item1 = [[UIMutableApplicationShortcutItem alloc] initWithType:@"login"
-                                                                                      localizedTitle:@"Login"
-                                                                                   localizedSubtitle:@"Click to login"
+                                                                                      localizedTitle:NSLocalizedString(@"login_name", nil)
+                                                                                   localizedSubtitle:NSLocalizedString(@"login_tip", nil)
                                                                                                 icon:[UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeConfirmation]
                                                                                             userInfo:nil];
     UIMutableApplicationShortcutItem *item2 = [[UIMutableApplicationShortcutItem alloc] initWithType:@"logout"
-                                                                                      localizedTitle:@"Logout"
-                                                                                   localizedSubtitle:@"Click to logout"
+                                                                                      localizedTitle:NSLocalizedString(@"logout_name", nil)
+                                                                                   localizedSubtitle:NSLocalizedString(@"logout_tip", nil)
                                                                                                 icon:[UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeProhibit]
                                                                                             userInfo:nil];
     NSArray *addArr = @[item2, item1];

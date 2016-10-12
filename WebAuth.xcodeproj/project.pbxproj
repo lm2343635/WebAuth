@@ -11,6 +11,8 @@
 		E46A12BA1DAE688E001DBB7E /* NetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E46A12B91DAE688E001DBB7E /* NetViewController.m */; };
 		E46A12C31DAE6CEE001DBB7E /* AuthTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E46A12C21DAE6CEE001DBB7E /* AuthTool.m */; };
 		E46A12C61DAE71D3001DBB7E /* AlertTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E46A12C51DAE71D3001DBB7E /* AlertTool.m */; };
+		E46A12C91DAE8874001DBB7E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E46A12CB1DAE8874001DBB7E /* Localizable.strings */; };
+		E46A12D61DAE9026001DBB7E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E46A12D81DAE9026001DBB7E /* InfoPlist.strings */; };
 		E4D189421BB96387003A5EB7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D189411BB96387003A5EB7 /* main.m */; };
 		E4D189451BB96387003A5EB7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D189441BB96387003A5EB7 /* AppDelegate.m */; };
 		E4D1894B1BB96387003A5EB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D189491BB96387003A5EB7 /* Main.storyboard */; };
@@ -47,6 +49,16 @@
 		E46A12C21DAE6CEE001DBB7E /* AuthTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthTool.m; sourceTree = "<group>"; };
 		E46A12C41DAE71D3001DBB7E /* AlertTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertTool.h; sourceTree = "<group>"; };
 		E46A12C51DAE71D3001DBB7E /* AlertTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertTool.m; sourceTree = "<group>"; };
+		E46A12CD1DAE888F001DBB7E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E46A12CE1DAE89CA001DBB7E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		E46A12CF1DAE89CA001DBB7E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		E46A12D01DAE89CA001DBB7E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		E46A12D11DAE89D7001DBB7E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		E46A12D21DAE89D7001DBB7E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		E46A12D31DAE89D7001DBB7E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E46A12D71DAE9026001DBB7E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E46A12D91DAE9028001DBB7E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		E46A12DA1DAE9029001DBB7E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E4D1893D1BB96387003A5EB7 /* WebAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D189411BB96387003A5EB7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E4D189431BB96387003A5EB7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -152,6 +164,8 @@
 			isa = PBXGroup;
 			children = (
 				E4D189411BB96387003A5EB7 /* main.m */,
+				E46A12CB1DAE8874001DBB7E /* Localizable.strings */,
+				E46A12D81DAE9026001DBB7E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -266,6 +280,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				ja,
 			);
 			mainGroup = E4D189341BB96386003A5EB7;
 			productRefGroup = E4D1893E1BB96387003A5EB7 /* Products */;
@@ -285,8 +301,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4D189501BB96387003A5EB7 /* LaunchScreen.storyboard in Resources */,
+				E46A12C91DAE8874001DBB7E /* Localizable.strings in Resources */,
 				E4D1894D1BB96387003A5EB7 /* Assets.xcassets in Resources */,
 				E4D1894B1BB96387003A5EB7 /* Main.storyboard in Resources */,
+				E46A12D61DAE9026001DBB7E /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,10 +417,32 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		E46A12CB1DAE8874001DBB7E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E46A12CD1DAE888F001DBB7E /* en */,
+				E46A12D01DAE89CA001DBB7E /* zh-Hans */,
+				E46A12D31DAE89D7001DBB7E /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		E46A12D81DAE9026001DBB7E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E46A12D71DAE9026001DBB7E /* en */,
+				E46A12D91DAE9028001DBB7E /* zh-Hans */,
+				E46A12DA1DAE9029001DBB7E /* ja */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		E4D189491BB96387003A5EB7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E4D1894A1BB96387003A5EB7 /* Base */,
+				E46A12CE1DAE89CA001DBB7E /* zh-Hans */,
+				E46A12D11DAE89D7001DBB7E /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -411,6 +451,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				E4D1894F1BB96387003A5EB7 /* Base */,
+				E46A12CF1DAE89CA001DBB7E /* zh-Hans */,
+				E46A12D21DAE89D7001DBB7E /* ja */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -422,6 +464,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -457,6 +500,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -466,6 +510,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -494,6 +539,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;

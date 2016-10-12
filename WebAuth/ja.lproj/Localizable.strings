@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  WebAuth
+
+  Created by 李大爷的电脑 on 13/10/2016.
+  Copyright © 2016 李大爷. All rights reserved.
+*/
+
+tip_name = "情報";
+ok_name = "OK";
+
+login_success = "ログインしました！";
+login_failed = "ログインは失敗しました。ユーザー名とパスワードをもう一度確認の上、筑波大学学内のネットワークを接続し、ログインしてみてください。";
+logout_success = "ログアウトしました。";
+logout_failed = "ログアウトは失敗しました。筑波大学学内のネットワークを接続し、ログアウトしてみてください。";
+
+login_name = "ログイン";
+login_tip = "クリックしてログイン";
+logout_name = "ログアウト";
+logout_tip = "クリックしてログアウト";

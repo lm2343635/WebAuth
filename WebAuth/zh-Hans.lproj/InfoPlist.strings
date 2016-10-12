@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  WebAuth
+
+  Created by 李大爷的电脑 on 13/10/2016.
+  Copyright © 2016 李大爷. All rights reserved.
+*/
+
+CFBundleDisplayName = "筑波连网";

@@ -57,8 +57,8 @@
                        finished:^(BOOL success) {
                            _loginButton.enabled = YES;
                            _loadingActivityIndicatorView.hidden = YES;
-                           NSString *message = success? @"Login Success!": @"Login Failed, check your username and password and make sure you have connected to network in Tsukuba Univ.";
-                           [AlertTool showAlertWithTitle:@"Tip"
+                           NSString *message = success? NSLocalizedString(@"login_success", nil): NSLocalizedString(@"login_failed", nil);
+                           [AlertTool showAlertWithTitle:NSLocalizedString(@"tip_name", nil)
                                               andContent:message
                                         inViewController:self];
                        }];
@@ -69,8 +69,8 @@
         NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
     }
     [AuthTool logout:^(BOOL success) {
-        NSString *message = success? @"Logout Success!": @"Logout Failed, make sure you have connected to network in Tsukuba Univ.";
-        [AlertTool showAlertWithTitle:@"Tip"
+        NSString *message = success? NSLocalizedString(@"logout_success", nil): NSLocalizedString(@"logout_failed", nil);
+        [AlertTool showAlertWithTitle:NSLocalizedString(@"tip_name", nil)
                            andContent:message
                      inViewController:self];
     }];
