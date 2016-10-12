@@ -15,7 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tsukuba" translatesAutoresizingMaskIntoConstraints="NO" id="ucZ-xo-97A">
@@ -24,33 +24,41 @@
                                     <constraint firstAttribute="height" constant="125" id="r19-hX-KUm"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Auto Web Auth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3k0-zu-B01">
-                                <frame key="frameInset" minX="78" minY="231" width="164" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="University of Tsukuba" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0S-M9-efw">
+                                <frame key="frameInset" minX="109" minY="268" width="157" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="University of Tsukuba" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0S-M9-efw">
-                                <frame key="frameInset" minX="78" minY="260" width="166" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tsukuba Net" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Xe-70-ovh">
+                                <frame key="frameInset" minX="113" minY="239" width="148" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" red="0.39943426847457886" green="0.0" blue="0.60159796476364136" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="fczm.pw © 2015 - 2016. All Rights Reserved " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pfc-P1-YJR">
+                                <frame key="frameInset" minX="59" minY="608" width="257" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="3k0-zu-B01" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="0Yf-7R-JQ6"/>
                             <constraint firstItem="ucZ-xo-97A" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="77E-h0-YoC"/>
+                            <constraint firstItem="S0S-M9-efw" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="8eV-wJ-IIT"/>
                             <constraint firstItem="ucZ-xo-97A" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="71" id="FFt-N2-ryW"/>
-                            <constraint firstItem="S0S-M9-efw" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="JMI-G3-W2E"/>
-                            <constraint firstItem="3k0-zu-B01" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="211" id="RZr-2r-XR4"/>
-                            <constraint firstItem="S0S-M9-efw" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="240" id="fwr-47-7Sv"/>
+                            <constraint firstItem="S0S-M9-efw" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="248" id="Ku9-JZ-c1l"/>
+                            <constraint firstItem="Pfc-P1-YJR" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="QFb-jy-EZk"/>
+                            <constraint firstItem="7Xe-70-ovh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="V24-2k-rBI"/>
+                            <constraint firstItem="7Xe-70-ovh" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="219" id="Vn7-DF-T5A"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Pfc-P1-YJR" secondAttribute="bottom" constant="44" id="nNc-xD-Eqq"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
     <resources>
