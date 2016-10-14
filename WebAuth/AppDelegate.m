@@ -21,6 +21,10 @@
     if(DEBUG) {
         NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
     }
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if ([defaults objectForKey:URL] == nil) {
+        [defaults setObject:@"https://webauth01.cc.tsukuba.ac.jp:8443/" forKey:URL];
+    }
     //Support 3D Touch
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0) {
         [self createItem];

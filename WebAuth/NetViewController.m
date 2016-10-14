@@ -25,6 +25,7 @@
     }
     [super viewDidLoad];
     defaults = [NSUserDefaults standardUserDefaults];
+    [AuthTool refreshConnectURL];
     NSString *username = [defaults objectForKey:USERNAME];
     NSString *password = [defaults objectForKey:PASSWORD];
     if (![username isEqualToString:@""]) {

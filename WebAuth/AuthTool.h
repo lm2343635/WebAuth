@@ -11,6 +11,8 @@
 
 @interface AuthTool : NSObject
 
++ (void)refreshConnectURL;
+
 + (void)loginWithUsername:(NSString *)username
                  password:(NSString *)password
                  finished:(void (^)(BOOL success))downloadProgress;

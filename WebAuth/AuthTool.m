@@ -17,6 +17,26 @@
     return [(AppDelegate *)[[UIApplication sharedApplication] delegate] httpSessionManager];
 }
 
++ (void)refreshConnectURL {
+    if (DEBUG) {
+        NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
+    }
+    AFHTTPSessionManager *manager = [self httpSessionManager];
+    [manager GET:@"http://www.cc.tsukuba.ac.jp/wp/service/notice/"
+      parameters:nil
+        progress:nil
+         success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+             NSString *html = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
+             NSString *url = [[[[html componentsSeparatedByString:@"form method=\"get\" action=\""] objectAtIndex:1] componentsSeparatedByString:@"\">"] objectAtIndex:0];
+             [[NSUserDefaults standardUserDefaults] setObject:url forKey:@"url"];
+         }
+         failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+             if (DEBUG) {
+                 NSLog(@"Error: %@", error.localizedDescription);
+             }
+         }];
+}
+
 + (void)loginWithUsername:(NSString *)username
                  password:(NSString *)password
                  finished:(void (^)(BOOL success))doAfter {
@@ -24,7 +44,8 @@
         NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
     }
     AFHTTPSessionManager *manager = [self httpSessionManager];
-    [manager POST:@"https://webauth01.cc.tsukuba.ac.jp:8443/cgi-bin/adeflogin.cgi"
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [manager POST:[NSString stringWithFormat:@"%@cgi-bin/adeflogin.cgi", [defaults objectForKey:URL]]
        parameters:@{
                     @"name":username,
                     @"pass":password
@@ -43,7 +64,8 @@
         NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
     }
     AFHTTPSessionManager *manager = [self httpSessionManager];
-    [manager POST:@"https://webauth01.cc.tsukuba.ac.jp:8443/cgi-bin/adeflogout.cgi"
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [manager POST:[NSString stringWithFormat:@"%@cgi-bin/adeflogout.cgi", [defaults objectForKey:URL]]
        parameters:nil
          progress:nil
           success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
