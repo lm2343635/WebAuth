@@ -11,7 +11,7 @@
 
 @interface AuthTool : NSObject
 
-+ (void)refreshConnectURL;
++ (void)refreshConnectURL:(void (^)(BOOL success))doAfter;
 
 + (void)loginWithUsername:(NSString *)username
                  password:(NSString *)password

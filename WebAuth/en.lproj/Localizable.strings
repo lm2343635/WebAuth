@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  WebAuth
+
+  Created by 李大爷的电脑 on 13/10/2016.
+  Copyright © 2016 李大爷. All rights reserved.
+*/
+
+tip_name = "Tip";
+ok_name = "OK";
+
+login_success = "Login success！";
+login_failed = "Login failed. Check you username and password. Make sure you have accessed to the network in Tsukuba Univ.";
+logout_success = "Logout success!";
+logout_failed = "Logout failed. Make sure you have accessed to the network in Tsukuba Univ.";
+
+login_name = "Login";
+login_tip = "Click to login";
+logout_name = "Logout";
+logout_tip = "Click to logout";
+
+connect_tsukuba_network = "Make sure you have accessed to the network in Tsukuba Univ.";

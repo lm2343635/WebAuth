@@ -17,7 +17,7 @@
     return [(AppDelegate *)[[UIApplication sharedApplication] delegate] httpSessionManager];
 }
 
-+ (void)refreshConnectURL {
++ (void)refreshConnectURL:(void (^)(BOOL success))doAfter {
     if (DEBUG) {
         NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
     }
@@ -27,8 +27,14 @@
         progress:nil
          success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
              NSString *html = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
-             NSString *url = [[[[html componentsSeparatedByString:@"form method=\"get\" action=\""] objectAtIndex:1] componentsSeparatedByString:@"\">"] objectAtIndex:0];
-             [[NSUserDefaults standardUserDefaults] setObject:url forKey:@"url"];
+             if ([html containsString:@"form method=\"get\" action=\""]) {
+                 NSString *url = [[[[html componentsSeparatedByString:@"form method=\"get\" action=\""] objectAtIndex:1] componentsSeparatedByString:@"\">"] objectAtIndex:0];
+                 [[NSUserDefaults standardUserDefaults] setObject:url forKey:@"url"];
+                 doAfter(YES);
+             } else {
+                 doAfter(NO);
+             }
+             
          }
          failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
              if (DEBUG) {

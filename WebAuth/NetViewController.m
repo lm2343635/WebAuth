@@ -25,7 +25,13 @@
     }
     [super viewDidLoad];
     defaults = [NSUserDefaults standardUserDefaults];
-    [AuthTool refreshConnectURL];
+    [AuthTool refreshConnectURL:^(BOOL success) {
+        if (!success) {
+            [AlertTool showAlertWithTitle:@"Tip"
+                               andContent:NSLocalizedString(@"connect_tsukuba_network", @"Make sure you have accessed to the network in Tsukuba Univ.")
+                         inViewController:self];
+        }
+    }];
     NSString *username = [defaults objectForKey:USERNAME];
     NSString *password = [defaults objectForKey:PASSWORD];
     if (![username isEqualToString:@""]) {

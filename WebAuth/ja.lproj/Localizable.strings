@@ -18,3 +18,5 @@ login_name = "ログイン";
 login_tip = "クリックしてログイン";
 logout_name = "ログアウト";
 logout_tip = "クリックしてログアウト";
+
+connect_tsukuba_network = "筑波大学学内のネットワークを接続してください。";

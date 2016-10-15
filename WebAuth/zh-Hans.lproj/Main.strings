@@ -1,0 +1,18 @@
+
+/* Class = "UITextField"; placeholder = "Username"; ObjectID = "Gt3-pR-Jir"; */
+"Gt3-pR-Jir.placeholder" = "用户名（包含学号的13位数字）";
+
+/* Class = "UIButton"; normalTitle = "Logout"; ObjectID = "XBZ-ub-Jor"; */
+"XBZ-ub-Jor.normalTitle" = "退出";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "cTK-tZ-BB1"; */
+"cTK-tZ-BB1.placeholder" = "密码";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "dtJ-VD-1Bx"; */
+"dtJ-VD-1Bx.normalTitle" = "登录";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "wro-nD-Grx"; */
+"wro-nD-Grx.title" = "Item";
+
+/* Class = "UINavigationItem"; title = "Tsukuba Net"; ObjectID = "yhG-dL-do6"; */
+"yhG-dL-do6.title" = "筑波连网";
