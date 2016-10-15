@@ -27,7 +27,7 @@
     defaults = [NSUserDefaults standardUserDefaults];
     [AuthTool refreshConnectURL:^(BOOL success) {
         if (!success) {
-            [AlertTool showAlertWithTitle:@"Tip"
+            [AlertTool showAlertWithTitle:NSLocalizedString(@"tip_name", @"Tip")
                                andContent:NSLocalizedString(@"connect_tsukuba_network", @"Make sure you have accessed to the network in Tsukuba Univ.")
                          inViewController:self];
         }
