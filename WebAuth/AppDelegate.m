@@ -25,6 +25,21 @@
     if ([defaults objectForKey:URL] == nil) {
         [defaults setObject:@"https://webauth01.cc.tsukuba.ac.jp:8443/" forKey:URL];
     }
+    if ([defaults objectForKey:TIMER] == nil) {
+        [defaults setObject:@{
+                              CYCLE: @24,
+                              REMIND: @30,
+                              NOTIFICATION: @YES
+                              }
+                     forKey:TIMER];
+    }
+    
+    //Register local notification
+    if ([[UIDevice currentDevice].systemVersion doubleValue] >= 8.0) {
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound categories:nil];
+        [application registerUserNotificationSettings:settings];
+    }
+    
     //Support 3D Touch
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0) {
         [self createItem];

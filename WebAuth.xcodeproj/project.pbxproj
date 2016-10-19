@@ -13,6 +13,7 @@
 		E46A12C61DAE71D3001DBB7E /* AlertTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E46A12C51DAE71D3001DBB7E /* AlertTool.m */; };
 		E46A12C91DAE8874001DBB7E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E46A12CB1DAE8874001DBB7E /* Localizable.strings */; };
 		E46A12D61DAE9026001DBB7E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E46A12D81DAE9026001DBB7E /* InfoPlist.strings */; };
+		E46A30741DB7C69E008A394B /* TimeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E46A30731DB7C69E008A394B /* TimeTableViewController.m */; };
 		E4D189421BB96387003A5EB7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D189411BB96387003A5EB7 /* main.m */; };
 		E4D189451BB96387003A5EB7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D189441BB96387003A5EB7 /* AppDelegate.m */; };
 		E4D1894B1BB96387003A5EB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D189491BB96387003A5EB7 /* Main.storyboard */; };
@@ -59,6 +60,8 @@
 		E46A12D71DAE9026001DBB7E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E46A12D91DAE9028001DBB7E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		E46A12DA1DAE9029001DBB7E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E46A30721DB7C69E008A394B /* TimeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTableViewController.h; sourceTree = "<group>"; };
+		E46A30731DB7C69E008A394B /* TimeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTableViewController.m; sourceTree = "<group>"; };
 		E4D1893D1BB96387003A5EB7 /* WebAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D189411BB96387003A5EB7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E4D189431BB96387003A5EB7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -143,18 +146,20 @@
 		E4D1893F1BB96387003A5EB7 /* WebAuth */ = {
 			isa = PBXGroup;
 			children = (
-				E46A12B81DAE688E001DBB7E /* NetViewController.h */,
-				E46A12B91DAE688E001DBB7E /* NetViewController.m */,
-				E46A12C11DAE6CEE001DBB7E /* AuthTool.h */,
-				E46A12C21DAE6CEE001DBB7E /* AuthTool.m */,
 				E46A12C41DAE71D3001DBB7E /* AlertTool.h */,
 				E46A12C51DAE71D3001DBB7E /* AlertTool.m */,
 				E4D189431BB96387003A5EB7 /* AppDelegate.h */,
 				E4D189441BB96387003A5EB7 /* AppDelegate.m */,
-				E4D189491BB96387003A5EB7 /* Main.storyboard */,
+				E46A12C11DAE6CEE001DBB7E /* AuthTool.h */,
+				E46A12C21DAE6CEE001DBB7E /* AuthTool.m */,
+				E46A12B81DAE688E001DBB7E /* NetViewController.h */,
+				E46A12B91DAE688E001DBB7E /* NetViewController.m */,
+				E46A30721DB7C69E008A394B /* TimeTableViewController.h */,
+				E46A30731DB7C69E008A394B /* TimeTableViewController.m */,
+				E4D189511BB96387003A5EB7 /* Info.plist */,
 				E4D1894C1BB96387003A5EB7 /* Assets.xcassets */,
 				E4D1894E1BB96387003A5EB7 /* LaunchScreen.storyboard */,
-				E4D189511BB96387003A5EB7 /* Info.plist */,
+				E4D189491BB96387003A5EB7 /* Main.storyboard */,
 				E4D189401BB96387003A5EB7 /* Supporting Files */,
 			);
 			path = WebAuth;
@@ -382,6 +387,7 @@
 				E46A12C61DAE71D3001DBB7E /* AlertTool.m in Sources */,
 				E4D189451BB96387003A5EB7 /* AppDelegate.m in Sources */,
 				E4D189421BB96387003A5EB7 /* main.m in Sources */,
+				E46A30741DB7C69E008A394B /* TimeTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
