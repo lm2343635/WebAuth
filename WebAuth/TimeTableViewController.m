@@ -8,14 +8,14 @@
 
 #import "TimeTableViewController.h"
 #import "AppDelegate.h"
+#import "Timer.h"
 
 @interface TimeTableViewController ()
 
 @end
 
 @implementation TimeTableViewController {
-    NSUserDefaults *defaults;
-    NSDictionary *timer;
+    Timer *timer;
 }
 
 - (void)viewDidLoad {
@@ -23,17 +23,14 @@
         NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
     }
     [super viewDidLoad];
-    defaults = [NSUserDefaults standardUserDefaults];
-    timer = [defaults valueForKey:TIMER];
     
-    double cycle = [[timer objectForKey:CYCLE] doubleValue];
-    double remind = [[timer objectForKey:REMIND] doubleValue];
+    timer = [[Timer alloc] init];
     if (timer != nil) {
-        _cycleLabel.text = [NSString stringWithFormat:@"%.0f", cycle];
-        _cycleStepper.value = cycle;
-        _remindLabel.text = [NSString stringWithFormat:@"%.0f", remind];
-        _remindStepper.value = remind;
-        _notificationSwitch.on = [timer valueForKey:NOTIFICATION];
+        _cycleLabel.text = [NSString stringWithFormat:@"%ld", timer.cycle];
+        _cycleStepper.value = timer.cycle;
+        _remindLabel.text = [NSString stringWithFormat:@"%ld", timer.remind];
+        _remindStepper.value = timer.remind;
+        _notificationSwitch.on = timer.notification;
     }
 }
 
@@ -51,8 +48,7 @@
         NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
     }
     _cycleLabel.text = [NSString stringWithFormat:@"%0.f", sender.value];
-    [timer setValue:[NSNumber numberWithDouble:sender.value] forKey:CYCLE];
-    [defaults setObject:timer forKey:TIMER];
+    timer.cycle = sender.value;
 }
 
 - (IBAction)changeRemind:(UIStepper *)sender {
@@ -60,7 +56,13 @@
         NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
     }
     _remindLabel.text = [NSString stringWithFormat:@"%0.f", sender.value];
-    [timer setValue:[NSNumber numberWithDouble:sender.value] forKey:REMIND];
-    [defaults setObject:timer forKey:TIMER];
+    timer.remind = sender.value;
+}
+
+- (IBAction)changeNotification:(UISwitch *)sender {
+    if(DEBUG) {
+        NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
+    }
+    timer.notification = sender.on;
 }
 @end

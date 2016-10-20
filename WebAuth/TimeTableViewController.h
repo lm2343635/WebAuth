@@ -17,4 +17,5 @@
 
 - (IBAction)changeCycle:(UIStepper *)sender;
 - (IBAction)changeRemind:(UIStepper *)sender;
+- (IBAction)changeNotification:(UISwitch *)sender;
 @end

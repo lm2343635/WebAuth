@@ -10,10 +10,6 @@
 #import <AFNetworking/AFNetworking.h>
 
 #define URL @"url"
-#define TIMER @"timer"
-#define CYCLE @"cycle"
-#define REMIND @"remind"
-#define NOTIFICATION @"notification"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

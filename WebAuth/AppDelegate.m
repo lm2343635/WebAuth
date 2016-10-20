@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "AuthTool.h"
 #import "AlertTool.h"
+#import "Timer.h"
 
 @interface AppDelegate ()
 
@@ -25,13 +26,14 @@
     if ([defaults objectForKey:URL] == nil) {
         [defaults setObject:@"https://webauth01.cc.tsukuba.ac.jp:8443/" forKey:URL];
     }
-    if ([defaults objectForKey:TIMER] == nil) {
-        [defaults setObject:@{
-                              CYCLE: @24,
-                              REMIND: @30,
-                              NOTIFICATION: @YES
-                              }
-                     forKey:TIMER];
+
+    //Init timer
+    if ([defaults objectForKey:@"init"] == NO) {
+        [defaults setObject:@YES forKey:@"init"];
+        Timer *timer = [[Timer alloc] init];
+        timer.cycle = 24;
+        timer.remind = 30;
+        timer.notification = YES;
     }
     
     //Register local notification

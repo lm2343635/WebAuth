@@ -21,6 +21,7 @@
 		E4D189501BB96387003A5EB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D1894E1BB96387003A5EB7 /* LaunchScreen.storyboard */; };
 		E4D1895B1BB96387003A5EB7 /* WebAuthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1895A1BB96387003A5EB7 /* WebAuthTests.m */; };
 		E4D189661BB96387003A5EB7 /* WebAuthUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D189651BB96387003A5EB7 /* WebAuthUITests.m */; };
+		E4FB5BB41DB87B8800CEBFA6 /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FB5BB31DB87B8800CEBFA6 /* Timer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,8 @@
 		E4D189611BB96387003A5EB7 /* WebAuthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebAuthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D189651BB96387003A5EB7 /* WebAuthUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebAuthUITests.m; sourceTree = "<group>"; };
 		E4D189671BB96387003A5EB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4FB5BB21DB87B8800CEBFA6 /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
+		E4FB5BB31DB87B8800CEBFA6 /* Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Timer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +164,8 @@
 				E4D1894E1BB96387003A5EB7 /* LaunchScreen.storyboard */,
 				E4D189491BB96387003A5EB7 /* Main.storyboard */,
 				E4D189401BB96387003A5EB7 /* Supporting Files */,
+				E4FB5BB21DB87B8800CEBFA6 /* Timer.h */,
+				E4FB5BB31DB87B8800CEBFA6 /* Timer.m */,
 			);
 			path = WebAuth;
 			sourceTree = "<group>";
@@ -388,6 +393,7 @@
 				E4D189451BB96387003A5EB7 /* AppDelegate.m in Sources */,
 				E4D189421BB96387003A5EB7 /* main.m in Sources */,
 				E46A30741DB7C69E008A394B /* TimeTableViewController.m in Sources */,
+				E4FB5BB41DB87B8800CEBFA6 /* Timer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
