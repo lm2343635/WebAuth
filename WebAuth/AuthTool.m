@@ -7,6 +7,7 @@
 //
 
 #import "AuthTool.h"
+#import "Timer.h"
 
 @implementation AuthTool
 
@@ -58,6 +59,17 @@
                     }
          progress:nil
           success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+              //Alert if notification is on
+              Timer *timer = [[Timer alloc] init];
+              if (timer.notification) {
+                  UILocalNotification *notification = [[UILocalNotification alloc] init];
+                  notification.fireDate = [NSDate dateWithTimeIntervalSinceNow:(timer.cycle * 60 - timer.remind) * 60];
+                  notification.alertBody = [NSString stringWithFormat:@"Reconnect the Internet in %ld minutes!", timer.remind];
+                  notification.alertAction = @"Slide to reconnect";
+                  notification.soundName = UILocalNotificationDefaultSoundName;
+                  [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+              }
+              
               doAfter([[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding] == nil);
           }
           failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {

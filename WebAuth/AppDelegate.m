@@ -53,6 +53,23 @@
     return YES;
 }
 
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
+    if (DEBUG) {
+        NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
+    }
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *username = [defaults objectForKey:@"username"];
+    NSString *password = [defaults objectForKey:@"password"];
+    [AuthTool loginWithUsername:username
+                       password:password
+                       finished:^(BOOL success) {
+                           NSString *message = success? NSLocalizedString(@"login_success", nil): NSLocalizedString(@"login_failed", nil);
+                           [AlertTool showAlertWithTitle:NSLocalizedString(@"tip_name", nil)
+                                              andContent:message
+                                        inViewController:self.window.rootViewController];
+                       }];
+}
+
 - (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler {
     if(DEBUG) {
         NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
