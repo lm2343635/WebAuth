@@ -20,3 +20,4 @@ logout_name = "退出";
 logout_tip = "点击退出网络";
 
 connect_tsukuba_network = "请确认连接到筑波大学校内网。";
+

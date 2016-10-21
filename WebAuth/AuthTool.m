@@ -64,8 +64,8 @@
               if (timer.notification) {
                   UILocalNotification *notification = [[UILocalNotification alloc] init];
                   notification.fireDate = [NSDate dateWithTimeIntervalSinceNow:(timer.cycle * 60 - timer.remind) * 60];
-                  notification.alertBody = [NSString stringWithFormat:@"Reconnect the Internet in %ld minutes!", timer.remind];
-                  notification.alertAction = @"Slide to reconnect";
+                  notification.alertBody = [NSString stringWithFormat:NSLocalizedString(@"notification_reconnect", nil), timer.remind];
+                  notification.alertAction = NSLocalizedString(@"notification_action", nil);
                   notification.soundName = UILocalNotificationDefaultSoundName;
                   [[UIApplication sharedApplication] scheduleLocalNotification:notification];
               }

@@ -16,3 +16,31 @@
 
 /* Class = "UINavigationItem"; title = "Tsukuba Net"; ObjectID = "yhG-dL-do6"; */
 "yhG-dL-do6.title" = "筑波连网";
+
+//##################################################################################
+//#           AutoGenStrings            2016-10-21 14:42:53
+//##################################################################################
+
+/* Class = "UILabel"; text = "Remind before"; ObjectID = "gDU-UO-x2h"; */
+"gDU-UO-x2h.text" = "提醒于";
+
+/* Class = "UILabel"; text = "24"; ObjectID = "2FN-vw-sW1"; */
+"2FN-vw-sW1.text" = "24";
+
+/* Class = "UILabel"; text = "30"; ObjectID = "fX1-wn-3oq"; */
+"fX1-wn-3oq.text" = "30";
+
+/* Class = "UILabel"; text = "Cycle time"; ObjectID = "s7G-PD-Sn3"; */
+"s7G-PD-Sn3.text" = "断网周期";
+
+/* Class = "UILabel"; text = "Notification"; ObjectID = "Hg7-Qw-Gp3"; */
+"Hg7-Qw-Gp3.text" = "开启通知";
+
+/* Class = "UILabel"; text = "m"; ObjectID = "3mw-mW-Btr"; */
+"3mw-mW-Btr.text" = "分前";
+
+/* Class = "UILabel"; text = "h"; ObjectID = "fuz-yw-dwy"; */
+"fuz-yw-dwy.text" = "小时";
+
+/* Class = "UINavigationItem"; title = "Timer"; ObjectID = "oGw-aq-Onz"; */
+"oGw-aq-Onz.title" = "断网提醒";

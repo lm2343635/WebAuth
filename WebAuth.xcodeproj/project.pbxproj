@@ -14,6 +14,7 @@
 		E46A12C91DAE8874001DBB7E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E46A12CB1DAE8874001DBB7E /* Localizable.strings */; };
 		E46A12D61DAE9026001DBB7E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E46A12D81DAE9026001DBB7E /* InfoPlist.strings */; };
 		E46A30741DB7C69E008A394B /* TimeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E46A30731DB7C69E008A394B /* TimeTableViewController.m */; };
+		E4CECE7B1DB9E220000EA66D /* AutoGenStrings.py in Resources */ = {isa = PBXBuildFile; fileRef = E4CECE7A1DB9E220000EA66D /* AutoGenStrings.py */; };
 		E4D189421BB96387003A5EB7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D189411BB96387003A5EB7 /* main.m */; };
 		E4D189451BB96387003A5EB7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D189441BB96387003A5EB7 /* AppDelegate.m */; };
 		E4D1894B1BB96387003A5EB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D189491BB96387003A5EB7 /* Main.storyboard */; };
@@ -63,6 +64,7 @@
 		E46A12DA1DAE9029001DBB7E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E46A30721DB7C69E008A394B /* TimeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTableViewController.h; sourceTree = "<group>"; };
 		E46A30731DB7C69E008A394B /* TimeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTableViewController.m; sourceTree = "<group>"; };
+		E4CECE7A1DB9E220000EA66D /* AutoGenStrings.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = AutoGenStrings.py; sourceTree = "<group>"; };
 		E4D1893D1BB96387003A5EB7 /* WebAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D189411BB96387003A5EB7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E4D189431BB96387003A5EB7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				E4D189411BB96387003A5EB7 /* main.m */,
 				E46A12CB1DAE8874001DBB7E /* Localizable.strings */,
 				E46A12D81DAE9026001DBB7E /* InfoPlist.strings */,
+				E4CECE7A1DB9E220000EA66D /* AutoGenStrings.py */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				E4D1893B1BB96386003A5EB7 /* Resources */,
 				C5D659CD9058BE368F4991B4 /* Embed Pods Frameworks */,
 				952FB87C6782C5E29E3074E3 /* Copy Pods Resources */,
+				E4CECE7C1DB9E247000EA66D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -313,6 +317,7 @@
 				E4D189501BB96387003A5EB7 /* LaunchScreen.storyboard in Resources */,
 				E46A12C91DAE8874001DBB7E /* Localizable.strings in Resources */,
 				E4D1894D1BB96387003A5EB7 /* Assets.xcassets in Resources */,
+				E4CECE7B1DB9E220000EA66D /* AutoGenStrings.py in Resources */,
 				E4D1894B1BB96387003A5EB7 /* Main.storyboard in Resources */,
 				E46A12D61DAE9026001DBB7E /* InfoPlist.strings in Resources */,
 			);
@@ -379,6 +384,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		E4CECE7C1DB9E247000EA66D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "python ${SRCROOT}/${TARGET_NAME}/AutoGenStrings.py ${SRCROOT}/${TARGET_NAME}";
 		};
 /* End PBXShellScriptBuildPhase section */
 
