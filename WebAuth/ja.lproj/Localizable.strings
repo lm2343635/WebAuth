@@ -20,3 +20,6 @@ logout_name = "ログアウト";
 logout_tip = "クリックしてログアウト";
 
 connect_tsukuba_network = "筑波大学学内のネットワークを接続してください。";
+
+notification_reconnect = "%ld分以内でもう一度接続してください。";
+notification_action = "スライドで接続";

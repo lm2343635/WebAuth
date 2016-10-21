@@ -21,3 +21,5 @@ logout_tip = "点击退出网络";
 
 connect_tsukuba_network = "请确认连接到筑波大学校内网。";
 
+notification_reconnect = "请在%ld分钟之内重新连接网络！";
+notification_action = "滑动以连接";

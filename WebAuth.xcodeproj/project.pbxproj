@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		06D25D83D74918E909B243E0 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C3A808E0CF153C420E9AAF1 /* Pods.framework */; };
+		E4000FD81DBA095A0053DE8B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E4000FD71DBA095A0053DE8B /* icon.png */; };
 		E46A12BA1DAE688E001DBB7E /* NetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E46A12B91DAE688E001DBB7E /* NetViewController.m */; };
 		E46A12C31DAE6CEE001DBB7E /* AuthTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E46A12C21DAE6CEE001DBB7E /* AuthTool.m */; };
 		E46A12C61DAE71D3001DBB7E /* AlertTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E46A12C51DAE71D3001DBB7E /* AlertTool.m */; };
@@ -46,6 +47,7 @@
 		5B66BAB6B16BBBFAB888659E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		7C3A808E0CF153C420E9AAF1 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFD071F959689C1B8EB69E96 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E4000FD71DBA095A0053DE8B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		E4197CC91DB2468700F4E6E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E4197CCA1DB2468900F4E6E6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		E4197CCC1DB247CC00F4E6E6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 		E4D189401BB96387003A5EB7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E4000FD71DBA095A0053DE8B /* icon.png */,
 				E4D189411BB96387003A5EB7 /* main.m */,
 				E46A12CB1DAE8874001DBB7E /* Localizable.strings */,
 				E46A12D81DAE9026001DBB7E /* InfoPlist.strings */,
@@ -315,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4D189501BB96387003A5EB7 /* LaunchScreen.storyboard in Resources */,
+				E4000FD81DBA095A0053DE8B /* icon.png in Resources */,
 				E46A12C91DAE8874001DBB7E /* Localizable.strings in Resources */,
 				E4D1894D1BB96387003A5EB7 /* Assets.xcassets in Resources */,
 				E4CECE7B1DB9E220000EA66D /* AutoGenStrings.py in Resources */,
