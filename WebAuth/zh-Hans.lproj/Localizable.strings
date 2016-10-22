@@ -16,7 +16,7 @@ logout_failed = "退出失败。请确认连接到筑波大学校内网。";
 
 login_name = "登录";
 login_tip = "点击登录网络";
-logout_name = "退出";
+logout_name = "退出登录";
 logout_tip = "点击退出网络";
 
 connect_tsukuba_network = "请确认连接到筑波大学校内网。";
