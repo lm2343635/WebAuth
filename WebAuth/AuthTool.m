@@ -62,6 +62,7 @@
               //Alert if notification is on
               Timer *timer = [[Timer alloc] init];
               if (timer.notification) {
+                  [[UIApplication sharedApplication] cancelAllLocalNotifications];
                   UILocalNotification *notification = [[UILocalNotification alloc] init];
                   notification.fireDate = [NSDate dateWithTimeIntervalSinceNow:(timer.cycle * 60 - timer.remind) * 60];
                   notification.alertBody = [NSString stringWithFormat:NSLocalizedString(@"notification_reconnect", nil), timer.remind];

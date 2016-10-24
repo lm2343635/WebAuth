@@ -44,3 +44,10 @@
 
 /* Class = "UINavigationItem"; title = "Timer"; ObjectID = "oGw-aq-Onz"; */
 "oGw-aq-Onz.title" = "タイマー";
+
+//##################################################################################
+//#           AutoGenStrings            2016-10-24 16:40:07
+//##################################################################################
+
+/* Class = "UINavigationItem"; title = "Help"; ObjectID = "HUb-YT-xQW"; */
+"HUb-YT-xQW.title" = "Help";
