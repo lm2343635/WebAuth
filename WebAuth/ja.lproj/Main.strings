@@ -17,10 +17,6 @@
 /* Class = "UINavigationItem"; title = "Tsukuba Net"; ObjectID = "yhG-dL-do6"; */
 "yhG-dL-do6.title" = "つくばネット";
 
-//##################################################################################
-//#           AutoGenStrings            2016-10-21 14:42:53
-//##################################################################################
-
 /* Class = "UILabel"; text = "Remind before"; ObjectID = "gDU-UO-x2h"; */
 "gDU-UO-x2h.text" = "通知する時間";
 
@@ -45,9 +41,5 @@
 /* Class = "UINavigationItem"; title = "Timer"; ObjectID = "oGw-aq-Onz"; */
 "oGw-aq-Onz.title" = "タイマー";
 
-//##################################################################################
-//#           AutoGenStrings            2016-10-24 16:40:07
-//##################################################################################
-
 /* Class = "UINavigationItem"; title = "Help"; ObjectID = "HUb-YT-xQW"; */
-"HUb-YT-xQW.title" = "Help";
+"HUb-YT-xQW.title" = "使用説明";

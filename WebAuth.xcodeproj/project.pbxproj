@@ -15,6 +15,11 @@
 		E46A12C91DAE8874001DBB7E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E46A12CB1DAE8874001DBB7E /* Localizable.strings */; };
 		E46A12D61DAE9026001DBB7E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E46A12D81DAE9026001DBB7E /* InfoPlist.strings */; };
 		E46A30741DB7C69E008A394B /* TimeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E46A30731DB7C69E008A394B /* TimeTableViewController.m */; };
+		E49706201DDEE27F00114DDD /* help.en.html in Resources */ = {isa = PBXBuildFile; fileRef = E497061C1DDEE27F00114DDD /* help.en.html */; };
+		E49706211DDEE27F00114DDD /* help.ja.html in Resources */ = {isa = PBXBuildFile; fileRef = E497061D1DDEE27F00114DDD /* help.ja.html */; };
+		E49706221DDEE27F00114DDD /* help.zh.html in Resources */ = {isa = PBXBuildFile; fileRef = E497061E1DDEE27F00114DDD /* help.zh.html */; };
+		E49706231DDEE27F00114DDD /* semantic.min.css in Resources */ = {isa = PBXBuildFile; fileRef = E497061F1DDEE27F00114DDD /* semantic.min.css */; };
+		E49706261DDEE2F500114DDD /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E49706251DDEE2F500114DDD /* HelpViewController.m */; };
 		E4CECE7B1DB9E220000EA66D /* AutoGenStrings.py in Resources */ = {isa = PBXBuildFile; fileRef = E4CECE7A1DB9E220000EA66D /* AutoGenStrings.py */; };
 		E4D189421BB96387003A5EB7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D189411BB96387003A5EB7 /* main.m */; };
 		E4D189451BB96387003A5EB7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D189441BB96387003A5EB7 /* AppDelegate.m */; };
@@ -66,6 +71,12 @@
 		E46A12DA1DAE9029001DBB7E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E46A30721DB7C69E008A394B /* TimeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTableViewController.h; sourceTree = "<group>"; };
 		E46A30731DB7C69E008A394B /* TimeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTableViewController.m; sourceTree = "<group>"; };
+		E497061C1DDEE27F00114DDD /* help.en.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = help.en.html; sourceTree = "<group>"; };
+		E497061D1DDEE27F00114DDD /* help.ja.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = help.ja.html; sourceTree = "<group>"; };
+		E497061E1DDEE27F00114DDD /* help.zh.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = help.zh.html; sourceTree = "<group>"; };
+		E497061F1DDEE27F00114DDD /* semantic.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = semantic.min.css; sourceTree = "<group>"; };
+		E49706241DDEE2F500114DDD /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
+		E49706251DDEE2F500114DDD /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
 		E4CECE7A1DB9E220000EA66D /* AutoGenStrings.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = AutoGenStrings.py; sourceTree = "<group>"; };
 		E4D1893D1BB96387003A5EB7 /* WebAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D189411BB96387003A5EB7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -128,6 +139,28 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E49706191DDEE24600114DDD /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				E497061C1DDEE27F00114DDD /* help.en.html */,
+				E497061D1DDEE27F00114DDD /* help.ja.html */,
+				E497061E1DDEE27F00114DDD /* help.zh.html */,
+				E497061F1DDEE27F00114DDD /* semantic.min.css */,
+			);
+			name = Help;
+			sourceTree = "<group>";
+		};
+		E497061B1DDEE25600114DDD /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				E46A12C41DAE71D3001DBB7E /* AlertTool.h */,
+				E46A12C51DAE71D3001DBB7E /* AlertTool.m */,
+				E46A12C11DAE6CEE001DBB7E /* AuthTool.h */,
+				E46A12C21DAE6CEE001DBB7E /* AuthTool.m */,
+			);
+			name = Tool;
+			sourceTree = "<group>";
+		};
 		E4D189341BB96386003A5EB7 = {
 			isa = PBXGroup;
 			children = (
@@ -153,23 +186,23 @@
 		E4D1893F1BB96387003A5EB7 /* WebAuth */ = {
 			isa = PBXGroup;
 			children = (
-				E46A12C41DAE71D3001DBB7E /* AlertTool.h */,
-				E46A12C51DAE71D3001DBB7E /* AlertTool.m */,
+				E497061B1DDEE25600114DDD /* Tool */,
+				E49706191DDEE24600114DDD /* Help */,
 				E4D189431BB96387003A5EB7 /* AppDelegate.h */,
 				E4D189441BB96387003A5EB7 /* AppDelegate.m */,
-				E46A12C11DAE6CEE001DBB7E /* AuthTool.h */,
-				E46A12C21DAE6CEE001DBB7E /* AuthTool.m */,
 				E46A12B81DAE688E001DBB7E /* NetViewController.h */,
 				E46A12B91DAE688E001DBB7E /* NetViewController.m */,
 				E46A30721DB7C69E008A394B /* TimeTableViewController.h */,
 				E46A30731DB7C69E008A394B /* TimeTableViewController.m */,
+				E4FB5BB21DB87B8800CEBFA6 /* Timer.h */,
+				E4FB5BB31DB87B8800CEBFA6 /* Timer.m */,
+				E49706241DDEE2F500114DDD /* HelpViewController.h */,
+				E49706251DDEE2F500114DDD /* HelpViewController.m */,
 				E4D189511BB96387003A5EB7 /* Info.plist */,
 				E4D1894C1BB96387003A5EB7 /* Assets.xcassets */,
 				E4D1894E1BB96387003A5EB7 /* LaunchScreen.storyboard */,
 				E4D189491BB96387003A5EB7 /* Main.storyboard */,
 				E4D189401BB96387003A5EB7 /* Supporting Files */,
-				E4FB5BB21DB87B8800CEBFA6 /* Timer.h */,
-				E4FB5BB31DB87B8800CEBFA6 /* Timer.m */,
 			);
 			path = WebAuth;
 			sourceTree = "<group>";
@@ -318,9 +351,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4D189501BB96387003A5EB7 /* LaunchScreen.storyboard in Resources */,
+				E49706201DDEE27F00114DDD /* help.en.html in Resources */,
 				E4000FD81DBA095A0053DE8B /* icon.png in Resources */,
+				E49706211DDEE27F00114DDD /* help.ja.html in Resources */,
 				E46A12C91DAE8874001DBB7E /* Localizable.strings in Resources */,
+				E49706221DDEE27F00114DDD /* help.zh.html in Resources */,
 				E4D1894D1BB96387003A5EB7 /* Assets.xcassets in Resources */,
+				E49706231DDEE27F00114DDD /* semantic.min.css in Resources */,
 				E4CECE7B1DB9E220000EA66D /* AutoGenStrings.py in Resources */,
 				E4D1894B1BB96387003A5EB7 /* Main.storyboard in Resources */,
 				E46A12D61DAE9026001DBB7E /* InfoPlist.strings in Resources */,
@@ -416,6 +453,7 @@
 				E4D189421BB96387003A5EB7 /* main.m in Sources */,
 				E46A30741DB7C69E008A394B /* TimeTableViewController.m in Sources */,
 				E4FB5BB41DB87B8800CEBFA6 /* Timer.m in Sources */,
+				E49706261DDEE2F500114DDD /* HelpViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,7 +625,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Meng Li (6ANM44X2CJ)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 6ANM44X2CJ;
 				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
 				INFOPLIST_FILE = WebAuth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -606,7 +644,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Meng Li (6ANM44X2CJ)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 6ANM44X2CJ;
 				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=0";
 				INFOPLIST_FILE = WebAuth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

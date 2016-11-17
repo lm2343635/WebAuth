@@ -17,10 +17,6 @@
 /* Class = "UINavigationItem"; title = "Tsukuba Net"; ObjectID = "yhG-dL-do6"; */
 "yhG-dL-do6.title" = "筑波连网";
 
-//##################################################################################
-//#           AutoGenStrings            2016-10-21 14:42:53
-//##################################################################################
-
 /* Class = "UILabel"; text = "Remind before"; ObjectID = "gDU-UO-x2h"; */
 "gDU-UO-x2h.text" = "提醒于";
 
@@ -45,9 +41,6 @@
 /* Class = "UINavigationItem"; title = "Timer"; ObjectID = "oGw-aq-Onz"; */
 "oGw-aq-Onz.title" = "断网提醒";
 
-//##################################################################################
-//#           AutoGenStrings            2016-10-24 16:40:07
-//##################################################################################
-
 /* Class = "UINavigationItem"; title = "Help"; ObjectID = "HUb-YT-xQW"; */
-"HUb-YT-xQW.title" = "Help";
+"HUb-YT-xQW.title" = "帮助文档";
+
