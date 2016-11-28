@@ -19,7 +19,6 @@
         NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
     }
     [super viewDidLoad];
-    NSLog(@"%@", [[NSLocale currentLocale] localeIdentifier]);
     NSString *lan = [[[[NSLocale currentLocale] localeIdentifier] componentsSeparatedByString:@"_"] objectAtIndex:0];
     lan = [[lan componentsSeparatedByString:@"-"] objectAtIndex:0];
     NSString *fileName = [NSString stringWithFormat:@"help.%@", lan];
@@ -27,6 +26,5 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [_webView loadRequest:request];
 }
-
 
 @end
