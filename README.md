@@ -1,5 +1,5 @@
 # WebAuth
-Dowload it from App Store: https://itunes.apple.com/cn/app/webauth/id1139422363?l=en&mt=8
+Dowload it from App Store: https://itunes.apple.com/app/webauth/id1139422363
 
 This is an iOS App for auto web auth in the hirasuna and oikoshi student dormitory at University of Tsukuba. We can use this app to replace web auth using browser in our PC. This app support 3D touch to call auth directly before saved your username and password. Username and password will not uploaded to any server, so not worry about your account security. If there is any problem with it, just commit issue in my github Support URL: https://github.com/lm2343635/WebAuth.
 
